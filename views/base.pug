@@ -1,0 +1,82 @@
+//- layout.pu
+html
+head
+    title ProgramingHub.com
+    block scripts  
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    block style
+        style
+            include ../static/index.css 
+body
+div(class="main_hedding")
+    h1(class="h1_hedding")|ProgramingHub.com
+nav
+    div(class="navbar_menues")
+        ul
+            li #[a(href="/") Home]
+            li #[a(href="/Over_Coures") Over Coures]
+            li #[a(href="/about") about]
+
+            li #[a(id="more") More>>]
+            li #[a(id="more_up") Up>>]
+    div(class="Left_buttons")
+
+        if name=="Sing-in"
+            form(action="/sin-up" method="GET")
+                button(class="btn" id="sing-in") #{name}
+        else
+            form(action="/log-out" method="GET" id="log")
+                button(class="btn" id="sing-in") #{name}
+            
+        form(action="/Contect_us" method="GET")
+            button(class="btn" action="POST") Contect us
+div(id="mainhind_more")
+    div(id="hide-one")
+        div(class="one")
+            ul
+                li #[a(href="#") C]
+                li #[a(href="#") C++]
+                li #[a(href="#") Java]
+                li #[a(href="#") Python]
+                li #[a(href="#") c#]
+                li #[a(href="#") My-SQL]
+                li #[a(href="#") SQL]
+                li #[a(href="#") Mongodb]
+                li #[a(href="#") js]
+        div(class="one")        
+            ul  
+                li #[a(href="#") ML]
+                li #[a(href="#") AL]
+                li #[a(href="#") Dl]
+                li #[a(href="#") Ds]
+                li #[a(href="#") Roobots]
+                li #[a(href="#") Av]
+                li #[a(href="#") SQL]
+                li #[a(href="#") Mongodb]
+                li #[a(href="#") node-js]
+        div(class="one")
+            ul  
+                li #[a(href="#") acting]
+                li #[a(href="#") Dance]
+                li #[a(href="#") more..]
+block content
+    
+
+footer
+    div(class="img")
+        img(src="../static/img/logo1.png", alt="X")
+        img(src="../static/img/logo2.png", alt="X")
+    div(class="footer_box")
+        p All the copy rights goes to &copy ProgramingHub.com | AnteryamiZone | 
+    div(class="img")
+        img(src="../static/img/logo3.png", alt="X")
+        img(src="../static/img/logo4.png", alt="X")
+
+block script
+    script   
+        include ../static/index.js 
+
+
+
+
+

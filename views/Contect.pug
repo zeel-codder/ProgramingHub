@@ -1,0 +1,22 @@
+extends base.pug
+ 
+block content
+    div(class="container contectimg")
+        div
+            img(src="../static/img/l.jpg", alt="noop")
+        div(class="Contect")
+            div(class="Text-animetion")
+                h1 Your feedback is value-able for us
+            form(action="/done" method="POST" onsubmit="return fun()")
+                div(class="item")
+                    label(for="name") Name:
+                    input(type="text" name="name" placeholder="Enter your name") 
+                    label(for="sir_name") Sir_Name:
+                    input(type="text" name="sir_name" placeholder="Enter your sir.name") 
+                    label(for="E_mail") E-mail:
+                    input(type="email" name="E_mail" placeholder="Enter your email" value="") 
+                    label(for="P_Number") Phone-Number:
+                    input(type="text" name="P_Number" placeholder="Enter your Phone-Number")
+                    label(for="problem") Problem: 
+                    textarea(name="problem", cols="40", rows="10")
+                    button(class="btn2" type="submit") Sin-in

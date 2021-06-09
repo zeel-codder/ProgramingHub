@@ -1,0 +1,19 @@
+extends base.pug
+            
+block content
+    div(class="main")
+
+        div(class="container singinimg")
+            div
+                img(src="../static/img/l.jpg", alt="noop")
+            div(class="sin-up")
+                form(action="/" method="POST")
+                    div(class="item")
+                        label(for="name") Name:
+                        input(type="text" name="name" placeholder="Enter your name") 
+                        label(for="email") Email:
+                        input(type="email" name="email" placeholder="Enter your email")
+                        label(for="password") Password:
+                        input(type="password" name="password" placeholder="password")
+                        button(class="btn" id="sing-indone" type="submit") Sin-in
+                    

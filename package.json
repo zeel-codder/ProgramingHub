@@ -1,0 +1,20 @@
+{
+    "name": "programminghub.com",
+    "version": "1.0.0",
+    "description": "This web site using nodejs, pug(html), css, js,jQurey, mongodb and mongoose",
+    "main": "app.js",
+    "dependencies": {
+        "express": "^4.17.1",
+        "mongoose": "^5.9.25",
+        "pug": "^3.0.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "node app.js"
+    },
+    "keywords": [
+        "Moj"
+    ],
+    "author": "zeel prajapati",
+    "license": "ISC"
+}
