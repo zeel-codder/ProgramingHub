@@ -39,7 +39,7 @@ const silence = new Contect({ name: 'Silence' });
 // console.log(silence.name); // 'Silence'
 
 const hostname2 = "127.0.0.1"
-port = 3000
+port = process.env.PORT || 3000
 
 
 app.use('/static', express.static('static'))
